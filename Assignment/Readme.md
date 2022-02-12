@@ -1,12 +1,10 @@
-Program: cryptoGraph.java
+# Program: cryptoGraph.java
 
-The project is about analyzing cryptocurrency trading data.
-Various data structures and Algorithms have been used which are mentioned in the report as well.
+The project is about analyzing cryptocurrency trading data. Various data structures and Algorithms have been used which are mentioned in the report as well.
 
-The functionality of the program begins with loading the crypto data either from JSON files or loading the serialized data. 
-Furthermore, assets and trades can be enquired. Menu options give range of options such as finding a particular asset and trade, 
-displaying details regarding it and giving an overview of assets and trades. 
-The data can be saved as serialized data and potential direct and indirect trade paths between two assets.
+* The functionality of the program begins with loading the crypto data either from JSON files or loading the serialized data. 
+* Furthermore, assets and trades can be enquired. Menu options give range of options such as finding a particular asset and trade, displaying details regarding it and giving an overview of assets and trades. 
+* The data can be saved as serialized data and potential direct and indirect trade paths between two assets.
 
 Files: -
 
