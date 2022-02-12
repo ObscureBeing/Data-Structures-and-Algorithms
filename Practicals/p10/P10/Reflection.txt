@@ -1,0 +1,14 @@
+Answer 1: The heights of the resultant trees are less than the binary search trees(BST) with same input values. 
+          Therefore, these trees are more balanced and efficient for the input data given as compared to BST.
+
+Answer 2: Complixity of algorithms as compared to BST
+          Alorithms done in these activities: best case O(logN), worst case O(logN)
+          Binary Search Tree: best case O(logN), worst case O(N)
+
+Answer 3: 2-3-4 trees implementation will be easier to implement as compared to red black trees.
+          We can easily convert 2-3-4 trees to red black trees by following the conversion rules.
+
+Answer 4: In red black trees, in order traversal will be in the order left-root-right of their elements.
+          In B trees, first visit the left child then root and then continue traversal.
+          Similary with 2-3-4 trees, the traversal will begin from left node-root-right of the tree.
+

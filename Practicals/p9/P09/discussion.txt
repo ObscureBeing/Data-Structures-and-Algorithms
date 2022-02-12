@@ -1,0 +1,100 @@
+Exploring Run Times.
+--------------------------------------------
+|__Sort_| Data size_|____Time (ns)_________|
+|   ba  |   1000    |  43.0                |
+|   bd  |   1000    |  6784.0              |
+|   br  |   1000    |  3408.0              |
+|   bn  |   1000    |  2282.3333333333335  |
+|   sa  |   1000    |  16448.0             |
+|   sd  |   1000    |  1527.0              |
+|   sr  |   1000    |  3168.0              |
+|   sn  |   1000    |  1270.0              |
+|   ia  |   1000    |  50.333333333333336  |
+|   id  |   1000    |  1301.3333333333333  |
+|   ir  |   1000    |  448.6666666666667   |
+|   in  |   1000    |  81.0                |
+|   ma  |   1000    |  280.3333333333333   |
+|   md  |   1000    |  267.0               |
+|   mr  |   1000    |  408.6666666666667   |
+|   mn  |   1000    |  499.3333333333333   |
+|   qa  |   1000    |  2919.6666666666665  |
+|   qd  |   1000    |  2862.3333333333335  |
+|   qr  |   1000    |  105.66666666666667  |
+|   qn  |   1000    |  132.33333333333334  |
+________*___________*______________________|
+--------*-----------*------------------------
+|   ba  |   8000    | 725.6666666666666     |
+|   bd  |   8000    | 59562.0               |
+|   br  |   8000    | 156348.66666666666    |
+|   bn  |   8000    | 101392.33333333333    |
+|   sa  |   8000    | 16877.333333333332    |
+|   sd  |   8000    | 57454.333333333336    |
+|   sr  |   8000    | 39757.0               |
+|   sn  |   8000    | 41157.333333333336    |
+|   ia  |   8000    | 431.6666666666667     |
+|   id  |   8000    | 96128.0               |
+|   ir  |   8000    | 46152.666666666664    |
+|   in  |   8000    | 5491.666666666667     |
+|   ma  |   8000    |2648.0                 |
+|   md  |   8000    |11733.333333333334     |
+|   mr  |   8000    |2228.0                 |
+|   mn  |   8000    |1573.0                 |
+|   qa  |   8000    |14954.333333333334     |
+|   qd  |   8000    |47178.666666666664     |
+|   qr  |   8000    |1204.6666666666667     |
+|   qn  |   8000    |820.3333333333334      |
+_                                           |
+________*___________*_______________________|
+--------*-----------*------------------------
+|   ba  |   20000   | 1152.0                |
+|   bd  |   20000   | 685210.6666666666     |
+|   br  |   20000   | 1184948.0             |
+|   bn  |   20000   | 686563.0              |
+|   sa  |   20000   | 93422.66666666667     |
+|   sd  |   20000   | 248227.0              |
+|   sr  |   20000   | 271544.6666666667     |
+|   sn  |   20000   | 259992.33333333334    |
+|   ia  |   20000   | 1300.0                |
+|   id  |   20000   | 568120.6666666666     |
+|   ir  |   20000   | 310437.6666666667     |
+|   in  |   20000   | 33980.0               |
+|   ma  |   20000   | 7835.333333333333     |
+|   md  |   20000   | 15672.666666666666    |
+|   mr  |   20000   | 3659.3333333333335    |
+|   mn  |   20000   | 2821.0                |
+|   qa  |   20000   | 19806.333333333332    |
+|   qd  |   20000   | 79712.33333333333     |
+|   qr  |   20000   | 1000.3333333333334    |
+|   qn  |   20000   | 995.3333333333334     |
+_                                           |
+________*___________*_______________________|
+
+* Bubble sort: It performs lots of swaps and comparisons which make it less effective
+  and optimized as compared to other sorts. Bubble sort is good with ascending order 
+  sorted array, which means it's already sorted. 
+
+* Selection sort: For randomly sorted array, selection sort is best when we look at 
+  its run times. For descending array, it worked better than bubble sort as well as 
+  insertion sort.
+
+* Insertion sort: For nearly sorted arrays, insertion sort is far better than bubble 
+  and selection sorts. It works relatively fast.
+
+* Merge sort: Much better average/worst (descending, random) cases than O(N2) algorithms.
+  Simpler than QuickSort.
+
+* Quick sort: Typically the fastest algorithm
+for most data sets (if implemented well)
+• In-place sort 
+
+The following startegies have been tested using SortsTestHarness by passing array of different sizes in different sorted manner.
+
+=> QuickSort implementation with leftmost pivot selection
+Choosing left most pivot is a bad choice since if array is in sorted or reverse odered, the pivot will
+result in O(N)^2.
+
+=> QuickSort implementation with median of three pivot selection
+This improves the chances of getting agood pivot point.
+
+=> QuickSort implementation with random pivot selection
+This implementation isn't best on sorted/reversed data.
